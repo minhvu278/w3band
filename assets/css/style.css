@@ -1,4 +1,4 @@
-/*Reaset css*/
+  /*Reaset css*/
 
 * {
     padding: 0;
@@ -23,6 +23,15 @@ html {
 #header{
     height: 46px;
     background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+#nav {
+    display: inline-block;
 }
 
 #nav , .subnav{
@@ -49,6 +58,10 @@ html {
     display: block;
 }
 
+#nav li:hover .subnav {
+    display: block;
+}
+
 #nav > li:hover > a,
 #nav .subnav li:hover a{
     color: #000;
@@ -57,9 +70,11 @@ html {
 }
 
 #nav .subnav {
-    /*display: none;*/
+    display: none;
+    min-width: 160px;
     position: absolute;
     background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #nav .subnav a {
@@ -68,10 +83,31 @@ html {
     line-height: 38px;
 }
 
+#nav .nav-arrow-down {
+  font-size: 14px;
+}
 
-#slider{
-    min-height: 500px;
-    background-color: #333;
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/slide.jpg') top center / cover no-repeat;
 }
 #content{
 
